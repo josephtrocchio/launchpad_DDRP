@@ -6,7 +6,7 @@ services:
     command: gunicorn --workers=3 django_website.wsgi -b 0.0.0.0:8000
     environment:
       - ENVIRONMENT=production
-      - SECRET_KEY=
+      - SECRET_KEY=''
       - DEBUG=0
     ports:
       - 8000:8000
