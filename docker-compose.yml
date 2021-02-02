@@ -3,21 +3,22 @@ version: '3.8'
 services:
   web:
     build: .
-    command: gunicorn --workers=3 django_website.wsgi -b 0.0.0.0:8000
+    command: gunicorn --workers=3 drip_backend.wsgi -b 0.0.0.0:8000
     environment:
       - ENVIRONMENT=development
-      - SECRET_KEY=''
+      # This value of the secret key will need to change for the user
+      - SECRET_KEY=${SECRET_KEY}
       - DEBUG=1
     volumes:
       - .:/code
     ports:
       - 8000:8000
-    depends_on:
-      - db
-  db:
-    image: postgres:11
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+#     depends_on:
+#       - db
+#   db:
+#     image: postgres:11
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
 
-volumes:
-  postgres_data:
+# volumes:
+#   postgres_data:

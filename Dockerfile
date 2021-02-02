@@ -8,8 +8,8 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /code
 
 #Install dependecies
-COPY requirements.txt /code/
-RUN pip3 install -r requirements.txt
+COPY Pipfile Pipfile.lock /code/
+RUN pip install pipenv && pipenv install --system
 
 #Copy project
 COPY . /code
