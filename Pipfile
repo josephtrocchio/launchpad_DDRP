@@ -10,6 +10,7 @@ psycopg2-binary = "~=2.8.4"
 gunicorn = "*"
 django-import-export = "*"
 dj-database-url = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 pylint = "*"
