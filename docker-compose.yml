@@ -15,10 +15,23 @@ services:
       - 8000:8000
     depends_on:
       - db
+
   db:
     image: postgres:13
-#     volumes:
-#       - postgres_data:/var/lib/postgresql/data
+  #volumes:
+  #  - postgres_data:/var/lib/postgresql/data
+  
+  pgadmin4:
+    image: dpage/pgadmin4
+    depends_on:
+      - db
+    container_name: pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+      - PGADMIN_LISTEN_PORT=${PGADMIN_LISTEN_PORT}
+    ports:
+      - "80:80"
 
 # volumes:
 #   postgres_data:
