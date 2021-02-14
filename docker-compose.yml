@@ -20,8 +20,10 @@ services:
     image: postgres:13
     environment: 
       - POSTGRES_PASSWORD=postgres
-  #volumes:
-  #  - postgres_data:/var/lib/postgresql/data
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
   
   pgadmin4:
     image: dpage/pgadmin4
@@ -35,5 +37,5 @@ services:
     ports:
       - "80:80"
 
-# volumes:
-#   postgres_data:
+volumes:
+  postgres_data:
