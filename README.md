@@ -11,10 +11,11 @@ After installing docker on your machine it is as simple as running the container
 My focus is to create a dynamic approach to future projects having intensive database and usern requirements
 
 ## Technologies I'm using
+- Docker :whale:
 - Python :snake:
 - Django :newspaper:
 - Django REST Framework :boom:
-- Docker :whale:
+- Postgres :elephant:
 - Gunicorn :unicorn:
 
 ## Future Ideas
