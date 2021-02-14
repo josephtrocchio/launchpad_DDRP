@@ -6,7 +6,9 @@ dependecies to get a quick software up and running.
 
 ## How it works
 After installing docker on your machine it is as simple as running the container image.
+
 '''
+
 docker-compose up -d
 '''
 Docker will spin up the the services: web, database, and pgadmin4
