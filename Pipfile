@@ -11,6 +11,7 @@ gunicorn = "*"
 django-import-export = "*"
 dj-database-url = "*"
 django-crispy-forms = "*"
+whitenoise = "*"
 
 [dev-packages]
 pylint = "*"
