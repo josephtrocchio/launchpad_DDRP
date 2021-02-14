@@ -15,6 +15,7 @@ My focus is to create a dynamic approach to future projects having intensive dat
 - Django :newspaper:
 - Django REST Framework :boom:
 - Docker :whale:
+- Gunicorn :unicorn:
 
 ## Future Ideas
 I will hopefully work towards creating a launchpad for a dynamic front end with React, html, and CSS.
