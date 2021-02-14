@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    command: gunicorn --workers=3 django_website.wsgi -b 0.0.0.0:8000
+    command: gunicorn --workers=3 drip_backend.wsgi -b 0.0.0.0:8000
     environment:
       - ENVIRONMENT=production
       - SECRET_KEY=''
