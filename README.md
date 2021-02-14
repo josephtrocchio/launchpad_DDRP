@@ -1,4 +1,4 @@
-# Launch Pad for Django, Django REST Framework, and Postgres
+# Launchpad for Django, Django REST Framework, and Postgres
 ## Purpose
 The purpose of this project is to have a pre-configured backend for future software and web application development.
 The idea is to dockerize django's backend/ORM/admin with a Postgres database attached, and pre-install all the necessary
