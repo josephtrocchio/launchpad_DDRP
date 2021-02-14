@@ -7,7 +7,7 @@ dependecies to get a quick software up and running.
 ## How it works
 After installing docker on your machine it is as simple as running the container image. 
 
-## My focus on github
+## My focus on this project
 My focus is to create a dynamic approach to future projects having intensive database and usern requirements
 
 ## Technologies I'm using
