@@ -8,7 +8,6 @@ dependecies to get a quick software up and running.
 After installing docker on your machine it is as simple as running the container image.
 
 ```
-
 docker-compose up -d
 ```
 
